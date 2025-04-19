@@ -47,3 +47,57 @@ A demo React application that features:
 git clone https://github.com/your-username/calendar-table-demo.git
 cd calendar-table-demo
 ```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the dev server
+
+```bash
+npm run dev
+```
+
+## 🧪 Mock API Setup
+
+You can use a service like mocki.io to simulate an API that returns data for a given date range.
+
+Sample payload:
+
+[{
+"id": 1,
+"name": "Paula Hughes",
+"date": "2024-12-21 10:55:00 +0530",
+"timezone": "Asia/Kolkata",
+"amount": 868.99,
+"status": "Completed"
+},
+{
+"id": 2,
+"name": "Laura King",
+"date": "2024-12-21 23:33:00 -0500",
+"timezone": "America/New_York",
+"amount": 424.64,
+"status": "Completed"
+}]
+
+## 🗃 Directory Structure
+
+src/
+├── components/
+│ ├── Calendar/
+│ ├── Table/
+│ ├── Spinner/
+│ └── ErrorFallback.jsx
+├── utils/
+│ └── index.js
+├── constants.js
+├── App.jsx
+
+## 🛠 Customization
+
+-> Update constants.js with your desired timezones and mock API URL
+
+-> Modify Calendar or Table components to enhance styles or logic
