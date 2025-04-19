@@ -1,0 +1,33 @@
+.table-wrapper {
+    max-height: 20rem;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin-top: 12px;
+}
+  
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+  
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+  
+thead {
+    position: sticky;
+    cursor: pointer;
+    top: 0;
+    background-color: #f8f8f8;
+    z-index: 1;
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,0.1);
+}
+
+.search-input{
+    font-size: 22px;
+    padding: 6px 10px;
+}
+  
