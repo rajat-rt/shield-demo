@@ -1,12 +1,49 @@
-# React + Vite
+# 📆 Calendar & Table Demo with Timezone, Range Filter, and Suspense API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A demo React application that features:
 
-Currently, two official plugins are available:
+- 📅 Calendar with timezone support and tooltips
+- ✅ Validation for max date range
+- 💬 Special tooltips on holidays/events
+- 📊 Table that displays fetched data based on date range
+- 🔍 Search and Sort on table
+- ⏳ Suspense-based data fetching with Error Boundary
+- 🚀 Mock API integration
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Select a date range (max 10 days)
+- Choose timezone to format dates
+- Tooltips on special dates (like holidays)
+- Fetch and filter data based on selected date range
+- Table with:
+  - Sortable columns
+  - Search input
+  - Sticky headers
+- Uses:
+  - React `use()` with Suspense
+  - Error boundaries with retry button
+  - Smooth CSS transitions
+
+---
+
+## 📦 Tech Stack
+
+- React 18+
+- `react-calendar`
+- `date-fns`
+- `react-error-boundary`
+- Custom mock API using [mocki.io](https://mocki.io) or [mockoon.com](https://mockoon.com)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/calendar-table-demo.git
+cd calendar-table-demo
+```
