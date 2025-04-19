@@ -71,6 +71,7 @@ const Table = ({ rows, rowsHeader }) => {
           </tr>
         </thead>
         <tbody>
+          {sortedRows.length == 0 && <tr><td colSpan={rowsHeader.length} className='table-data-not-found'>Data  not found</td></tr>}
           {sortedRows.map((row) => {
             return (
               <tr key={row.id}>

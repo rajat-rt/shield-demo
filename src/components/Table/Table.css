@@ -31,3 +31,9 @@ thead {
     padding: 6px 10px;
 }
   
+.table-data-not-found{
+    font-style: italic;
+    font-size: 30px;
+    color: grey !important;
+    height: 150px;
+}
