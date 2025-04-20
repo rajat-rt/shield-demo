@@ -12,11 +12,10 @@ import {
     timeZones
 } from '../../constants';
 
-import { formatWithTimeZone, formatWithTimeZoneDateOnly } from '../../utils';
+import { formatWithTimeZoneDateOnly } from '../../utils';
 
 
-const Calendar = ({ range, setRange }) => {
-    const [timezone, setTimezone] = useState("UTC");
+const Calendar = ({ range, setRange, timezone, setTimezone }) => {
     const [tooltip, setTooltip] = useState("");
     const minDate = subDays(new Date(), 120);
 
@@ -85,12 +84,7 @@ const Calendar = ({ range, setRange }) => {
                 />
             </div>
         
-            { tooltip && (<div className="text-red-500 mt-2"> ⚠️ {tooltip}</div>)}
-        
-            <div className="range-div">
-                {range[0] && ( <div><strong>Start:</strong> {formatWithTimeZone(range[0], timezone)}</div> )}
-                {range[1] && ( <div><strong>End:</strong> {formatWithTimeZone(range[1], timezone)}</div> )}
-            </div>
+            { tooltip && (<div> ⚠️ {tooltip}</div>)}
         </div>
     );
 };

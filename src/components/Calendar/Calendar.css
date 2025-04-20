@@ -1,6 +1,7 @@
 
 .calendar-wrap{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -15,6 +16,7 @@
   }
   .react-calendar{
     border-radius: 6px;
+    min-height: 325px;
   }
   .react-calendar__tile {
     overflow: visible !important;
